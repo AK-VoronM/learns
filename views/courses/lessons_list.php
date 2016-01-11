@@ -1,8 +1,5 @@
-<?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<ul>
+    <?php foreach ($this->lessons as $lesson): ?>
+    <li><a href="/learns/?ctrl=Courses&act=ShowLesson&id=<?php echo $lesson->lesson_id; ?>" class="tooltip"><?php echo $lesson->lesson_name; ?><span><?php echo $lesson->lesson_shortdescription; ?></span></a></li>
+    <?php endforeach; ?>
+</ul>
