@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Админ панель - юзеры</title>
+	<link href="/css/reset.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wraper"> 
+	<div class="header"> 
+	<div class="logo"></div> 
+</div> 
+	<div class="content">
+	<form action="?mod=massaction&amp;act=users" method="post" name="editusers">
+<div style="background:#f0f0f0;float:left;padding:5px;width:170px;text-align:center;font-weight:bold;margin-top:5px;margin-left:45px;">Пользователь</div>
+<div style="background:#f0f0f0;float:left;padding:5px;width:110px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px">Логин</div>
+<div style="background:#f0f0f0;float:left;padding:5px;width:100px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px">Дата рождения</div>
+<div style="background:#f0f0f0;float:left;padding:5px;width:148px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px">E-mail</div>
+<div style="background:#f0f0f0;float:left;padding:4px;width:20px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px"><input type="checkbox" name="master_box" title="Выбрать все" onclick="javascript:ckeck_uncheck_all()" style="float:right;"></div>
+<div class="clr"></div>
+<div style="background:#fff;float:left;padding:5px;width:170px;text-align:center;font-weight:bold;margin-left:45px;"><a href="/u10" target="_blank" style="">па па</a></div>
+<div style="background:#fff;float:left;padding:5px;width:110px;text-align:center;margin-left:1px">admin</div>
+<div style="background:#fff;float:left;padding:5px;width:100px;text-align:center;margin-left:1px">13 октября</div>
+<div style="background:#fff;float:left;padding:5px;width:148px;text-align:center;margin-left:1px">email@test.ru</div>
+<div style="background:#fff;float:left;padding:4px;width:20px;text-align:center;font-weight:bold;margin-left:1px"><input type="checkbox" name="massaction_users[]" style="float:right;" value="10"></div>
+<div class="mgcler"></div>
+
+<div style="float:left;font-size:10px">
+<font color="red">Удаленные пользователи помечены красным цветом</font><br>
+<font color="blue">Забаненые пользователи помечены синим цветом</font>
+<input type="submit" value="Добавить нового пользователя" class="inp">
+</div>
+<div style="float:right">
+<select name="mass_type" class="inpu" style="width:260px">
+ <option value="0">- Действие -</option>
+ <option value="1">Удалить пользователей</option>
+ <option value="2">Заблокировать пользователей</option>
+ <option value="7">Воостановить пользователей</option>
+ <option value="9">Разблокировать пользователей</option>
+</select>
+<input type="submit" value="Выполнить" class="inp">
+</div>
+</form>
+	
+	</div>
+
+	<div class="footer">
+		footermenu
+	</div>
+	
+</body>
+</html>

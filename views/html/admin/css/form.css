@@ -1,0 +1,13 @@
+ul{
+	overflow:hidden;
+	list-style:none;
+	clear:both;
+	margin-bottom:5px;
+	height:25px;
+}
+li{
+	display:block;
+	float:left;
+	width:170px;
+	height:20px;
+}

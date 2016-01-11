@@ -1,0 +1,101 @@
+p{margin:100px auto;width:500px;}
+
+.prof-card-info {
+    overflow: hidden;
+    padding: 30px 0 20px;
+}
+.prof-ava-hold {
+    float: left;
+    margin-left: 100px;
+}
+.prof-ava {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.prof-act-btn {
+    text-align: left;
+    background: #f7f7f7;
+	width:320px;
+    overflow: hidden;
+    padding: 10px;
+}
+.prof-info {
+    box-sizing: border-box;
+    margin: 0 10% 0 30%;
+    padding-top: 9px;
+	padding-left: 110px;
+}
+.prof-act-btn a.prof-btn-setings {
+    padding: 5px 10px;
+}
+.prof-act-btn a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid;
+    border-color: #ccc #c5c6c8 #b6b7b9;
+    transition: all .05s ease-in-out;
+	text-decoration:none;
+}
+
+
+.flpodtext{color:#666;float:left;width:120px;padding-top:3px;padding-bottom:3px;padding-left:2px}
+.flpodinfo{padding-top:3px;padding-bottom:3px;margin-left:123px}
+
+
+.tooltip { 
+  position: relative;     /* Делаем элемент родительским для всплывающих подсказок */
+}
+.tooltip span {
+  position: absolute;     /* Выводим элемент из потока */
+  margin-left: -30000px;  /* И прячем далеко за краем экрана */
+}
+.tooltip:hover span {     /* При наведении */
+  margin-left: 0;         /* Возвращаем из далекого заэкранного края блок на место */
+  width: 250px;           /* Задаем ширину */
+  z-index: 1000;          /* Помещаем на самый верх */
+                          /* Позиционируем относительно родительского блока */
+  top:30px;               /* Отступ сверху */  
+  left:30px;              /* Отступ слева */          
+}
+
+.tooltip { 
+  border-bottom:1px dotted #3f3f3f;
+  cursor: help;
+}
+
+.tooltip span{ 
+  background-color: #3f3f3f; /* Фон всплывающего блока*/
+  color: #fafafa;			 /* Цвет текста */
+  padding:10px;				 /* Отступы */
+}
+
+.tooltip span{				 /* Закругляем уголки */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  behavior: url(pie.htc);
+}
+
+.tooltip span:after{
+  content: '';            /* Добавили контент */ 
+  width:0;                /* Спрятали его, превратив в 0 */
+  height:0;
+  border-bottom: 10px solid #3f3f3f;  /* Нижним бордером задаем цвет и высоту треугольника */
+  border-right: 30px solid transparent; /* Правым - ширину треугольника вправо */
+  position: absolute;     /* Позиционируем относительно родительского блока */
+  top:-10px;
+  left:10px;
+}

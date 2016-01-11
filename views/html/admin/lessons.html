@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Админ панель - уроки</title>
+	<link href="/css/reset.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wraper"> 
+	<div class="header"> 
+	<div class="logo"></div> 
+</div> 
+	<div class="content">
+	<form action="?mod=massaction&amp;act=users" method="post" name="editusers">
+<div style="background:#f0f0f0;float:left;padding:5px;width:170px;text-align:center;font-weight:bold;margin-top:5px;margin-left:45px;">Урок</div>
+<div style="background:#f0f0f0;float:left;padding:5px;width:110px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px">Категория курса</div>
+<div style="background:#f0f0f0;float:left;padding:5px;width:110px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px">Описание урока</div>
+<div style="background:#f0f0f0;float:left;padding:4px;width:20px;text-align:center;font-weight:bold;margin-top:5px;margin-left:1px"><input type="checkbox" name="master_box" title="Выбрать все" onclick="javascript:ckeck_uncheck_all()" style="float:right;"></div>
+<div class="clr"></div>
+<div style="background:#fff;float:left;padding:5px;width:170px;text-align:center;font-weight:bold;margin-left:45px;"><a href="/u10" target="_blank" style="">{lessonsname}</a></div>
+<div style="background:#fff;float:left;padding:5px;width:110px;text-align:center;margin-left:1px">{coursename}</div>
+<div style="background:#fff;float:left;padding:5px;width:110px;text-align:center;margin-left:1px">{lessonsinfo}</div>
+<div style="background:#fff;float:left;padding:4px;width:20px;text-align:center;font-weight:bold;margin-left:1px"><input type="checkbox" name="massaction_lessons[]" style="float:right;" value="10"></div>
+<div class="mgcler"></div>
+
+<div style="float:left;font-size:10px">
+<input type="submit" value="Добавить новый урок" class="inp">
+</div>
+<div style="float:right">
+<select name="mass_type" class="inpu" style="width:260px">
+ <option value="0">- Действие -</option>
+ <option value="1">Удалить урок</option>
+</select>
+<input type="submit" value="Выполнить" class="inp">
+</div>
+</form>
+	
+	</div>
+
+	<div class="footer">
+		
+	</div>
+	
+</body>
+</html>
