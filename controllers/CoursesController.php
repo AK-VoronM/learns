@@ -78,11 +78,16 @@ class CoursesController
             $id = $_GET['id'];   
             $lesson = Courses::getLesson($id);
             $course = Courses::getCourse($lesson->course_id);
+            $lesson_prew = Courses::getLessonByNumber($lesson->lesson_number - 1, $lesson->course_id);
+            $lesson_next = Courses::getLessonByNumber($lesson->lesson_number + 1, $lesson->course_id);
+            
             
             $view->user_login = $user->user_login;
             $view->user_group = $user->user_group;
             $view->lesson = $lesson;
             $view->course = $course;
+            $view->lesson_prew = $lesson_prew;
+            $view->lesson_next = $lesson_next;
             
             $view->display('header.php');
             $view->display('courses/lesson_view.php'); 
