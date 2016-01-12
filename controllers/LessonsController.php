@@ -17,7 +17,7 @@ class LessonsController
             $user = Auth::getUser();
             $id = $_GET['id'];
             $course = Courses::getCourse($id);     
-            $lessons = Courses::getLessons($id);
+            $lessons = Lessons::getLessons($id);
             
             $view->user_login = $user->user_login;
             $view->user_group = $user->user_group;
@@ -53,10 +53,10 @@ class LessonsController
         if ($auth) {
             $user = Auth::getUser();
             $id = $_GET['id'];   
-            $lesson = Courses::getLesson($id);
+            $lesson = Lessons::getLesson($id);
             $course = Courses::getCourse($lesson->course_id);
-            $lesson_prew = Courses::getLessonByNumber($lesson->lesson_number - 1, $lesson->course_id);
-            $lesson_next = Courses::getLessonByNumber($lesson->lesson_number + 1, $lesson->course_id);
+            $lesson_prew = Lessons::getLessonByNumber($lesson->lesson_number - 1, $lesson->course_id);
+            $lesson_next = Lessons::getLessonByNumber($lesson->lesson_number + 1, $lesson->course_id);
             
             
             $view->user_login = $user->user_login;
