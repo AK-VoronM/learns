@@ -15,10 +15,23 @@ a:hover {
   position: relative;
   min-height: 100%;
 }
+.regramka {
+    margin:10px 40px;
+    padding:15px;
+    border: solid 1px #000;
+}
 .header {
     width: 100%;
     height: 50px;
     background: #d8d6d7;
+}
+.usersul{
+    background:#f0f0f0;
+    float:left;
+    padding:5px;
+    width:100px;
+    text-align:center;
+    font-weight:bold;
 }
 .logo {
     width: 131px;
