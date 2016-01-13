@@ -18,6 +18,8 @@ class LessonsController
             $id = $_GET['id'];
             $course = Courses::getCourse($id);     
             $lessons = Lessons::getLessons($id);
+            $lessons_status = User::getUserLessons($user->user_id, $id);
+            $isUserCourse = Users::getUserCourse($user->user_id, $id);
             
             $view->user_login = $user->user_login;
             $view->user_group = $user->user_group;
@@ -26,10 +28,18 @@ class LessonsController
             
             $view->display('header.php');
             $view->display('lessons/lessons_head.php');
-            if($lessons){
-                $view->display('lessons/lessons_list.php'); 
+            if(!$isUserCourse){
+                if($lessons){
+                    $view->display('lessons/lessons_list.php'); 
+                }else{
+                    $view->display('lessons/lessons_error.php');
+                }
             }else{
-                $view->display('lessons/lessons_error.php');
+                if($lessons){
+                    $view->display('lessons/lessons_list.php'); 
+                }else{
+                    $view->display('lessons/lessons_error.php');
+                }
             }
             $view->display('courses/course_info.php');
             $view->display('footer.php');
