@@ -18,7 +18,7 @@ class LessonsController
             $id = $_GET['id'];
             $course = Courses::getCourse($id);     
             $lessons = Lessons::getLessons($id);
-            $lessons_status = User::getUserLessons($user->user_id, $id);
+            $lessons_status = Users::getUserLessons($user->user_id, $id);
             $isUserCourse = Users::getUserCourse($user->user_id, $id);
             
             $view->user_login = $user->user_login;

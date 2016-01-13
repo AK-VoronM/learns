@@ -58,7 +58,7 @@ class Users extends AbstractModel {
     
     public function setUserCourseStatus($user_id, $course_id, $course_status){
         //Устанавливает статус курса для пользователя
-        // Пройден, В процессе, Не доступен
+        // complete, available, not available
         // Возвращает истину или ложь
         
         $date = true;
@@ -69,7 +69,7 @@ class Users extends AbstractModel {
         //Возвращает массив из списка уроков и их статусов
         // [lesson_number=>lesson_status]
         
-        $date = [1 => 'Пройден', 2 => 'В процессе', 3 => 'Не доступен', 4 => 'Не доступен', 5 => 'Не доступен', 6 => 'Не доступен', 7 => 'Не доступен', 8 => 'Не доступен'];
+        $date = [1 => 'complete', 2 => 'available', 3 => 'not available', 4 => 'not available', 5 => 'not available', 6 => 'not available', 7 => 'not available', 8 => 'not available'];
         return $date;
     }
     
