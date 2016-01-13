@@ -5,6 +5,17 @@ body {
     font-size: 14px;
     font-family: Open Sans,Arial,Helvetica,sans-serif;
 }
+button {
+    background-color: #168de2;
+    border: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 15px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+    }
 a {
     color: #0066ff;
 }
@@ -15,23 +26,10 @@ a:hover {
   position: relative;
   min-height: 100%;
 }
-.regramka {
-    margin:10px 40px;
-    padding:15px;
-    border: solid 1px #000;
-}
 .header {
     width: 100%;
     height: 50px;
     background: #d8d6d7;
-}
-.usersul{
-    background:#f0f0f0;
-    float:left;
-    padding:5px;
-    width:100px;
-    text-align:center;
-    font-weight:bold;
 }
 .logo {
     width: 131px;
@@ -131,3 +129,49 @@ a:hover {
 .clear{
     clear: both;
 }
+/* Админка */ 
+ .usersul{
+    background:#f0f0f0;
+    float:left;
+    padding:5px;
+    width:100px;
+    text-align:center;
+    font-weight:bold;
+}
+/* Рамка Внимание! */
+.regramka {
+    margin:10px 40px;
+    padding:15px;
+    border: solid 1px #000;
+}
+/* Стили курсов */
+    .courses_block {
+        border:1px solid #000;
+        margin-top:10%;
+        float:left; 
+        width:400px; 
+        margin-right:10px; 
+        background-color:#fff;
+        height:335px;
+        margin-bottom:10px;
+        margin-left: 15px;
+    }
+    .courses_button {
+        float:left; 
+        width:140px; 
+        margin-left:33%;
+    }
+    .courses_name{
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left:31%;
+        color: #000;
+    }
+    .courses_desc{
+     font-family: Roboto Regular;
+     font-size: 15px;
+     font-weight: bold;
+     margin-left:3%;
+     color: #000;
+    }
