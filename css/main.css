@@ -124,3 +124,10 @@ a:hover {
   top:-10px;
   left:10px;
 }
+
+/*
+Стиль для сбрасывающего дива.
+*/
+.clear{
+    clear: both;
+}
