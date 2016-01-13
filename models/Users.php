@@ -1,6 +1,7 @@
 <?php
 class Users extends AbstractModel {
     
+    private $user_group, $user_hash, $user_id, $user_login, $user_password;
     public $date;
     
     public function getUsers(){

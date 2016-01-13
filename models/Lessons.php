@@ -1,5 +1,6 @@
 <?php
 class Lessons extends AbstractModel {
+    private $course_id, $lesson_id, $lesson_name, $lesson_number, $lesson_shortdescription, $lesson_text;
     public $date;
       
     public function getLessons($id){
