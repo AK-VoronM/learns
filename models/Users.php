@@ -37,7 +37,7 @@ class Users extends AbstractModel {
         // Возвращает id курса, если пользователь подписан
         // Возвращает false если нет
         
-        $date = 1;
+        $date = false;
         return $date;
     }
     
@@ -52,7 +52,7 @@ class Users extends AbstractModel {
     public function getUserCourseStatus($user_id, $course_id){
         // Возвращает статус курса для пользователя
         
-        $date = 'В процессе';
+        $date = 'available';
         return $date;       
     }
     
@@ -69,7 +69,7 @@ class Users extends AbstractModel {
         //Возвращает массив из списка уроков и их статусов
         // [lesson_number=>lesson_status]
         
-        $date = [1 => 'complete', 2 => 'available', 3 => 'not available', 4 => 'not available', 5 => 'not available', 6 => 'not available', 7 => 'not available', 8 => 'not available'];
+        $date = [1 => 'complete', 2 => 'available', 3 => 'notavailable', 4 => 'notavailable', 5 => 'notavailable', 6 => 'notavailable', 7 => 'notavailable', 8 => 'notavailable'];
         return $date;
     }
     

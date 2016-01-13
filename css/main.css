@@ -145,33 +145,56 @@ a:hover {
     border: solid 1px #000;
 }
 /* Стили курсов */
-    .courses_block {
-        border:1px solid #000;
-        margin-top:10%;
-        float:left; 
-        width:400px; 
-        margin-right:10px; 
-        background-color:#fff;
-        height:335px;
-        margin-bottom:10px;
-        margin-left: 15px;
-    }
-    .courses_button {
-        float:left; 
-        width:140px; 
-        margin-left:33%;
-    }
-    .courses_name{
-        font-family: Arial;
-        font-size: 15px;
-        font-weight: bold;
-        margin-left:31%;
-        color: #000;
-    }
-    .courses_desc{
-     font-family: Roboto Regular;
-     font-size: 15px;
-     font-weight: bold;
-     margin-left:3%;
-     color: #000;
-    }
+.courses_block {
+    border:1px solid #000;
+    margin-top:10%;
+    float:left; 
+    width:400px; 
+    margin-right:10px; 
+    background-color:#fff;
+    height:335px;
+    margin-bottom:10px;
+    margin-left: 15px;
+}
+.courses_button {
+    float:left; 
+    width:140px; 
+    margin-left:33%;
+}
+.courses_name{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left:31%;
+    color: #000;
+}
+.courses_desc{
+ font-family: Roboto Regular;
+ font-size: 15px;
+ font-weight: bold;
+ margin-left:3%;
+ color: #000;
+}
+    
+/*
+*Стили для вывода уроков
+*/
+.lessons {
+    overflow: hidden;
+    position: relative;
+}
+.course_reg {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.course_reg:hover {
+    background-color: gray;
+    opacity: 0.75;
+    
+}

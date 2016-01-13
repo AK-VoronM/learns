@@ -24,23 +24,21 @@ class LessonsController
             $view->user_login = $user->user_login;
             $view->user_group = $user->user_group;
             $view->lessons = $lessons;
+            $view->lessons_status = $lessons_status;
             $view->course = $course;
             
             $view->display('header.php');
             $view->display('lessons/lessons_head.php');
-            if(!$isUserCourse){
-                if($lessons){
-                    $view->display('lessons/lessons_list.php'); 
-                }else{
-                    $view->display('lessons/lessons_error.php');
-                }
+            if(!$lessons){
+                 $view->display('lessons/lessons_error.php');
             }else{
-                if($lessons){
-                    $view->display('lessons/lessons_list.php'); 
+                if(!$isUserCourse){
+                        $view->display('lessons/lessons_list.php'); 
                 }else{
-                    $view->display('lessons/lessons_error.php');
+                        $view->display('lessons/lessons_list_auth.php'); 
                 }
             }
+            
             $view->display('courses/course_info.php');
             $view->display('footer.php');
         }else{
