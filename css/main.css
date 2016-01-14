@@ -5,17 +5,6 @@ body {
     font-size: 14px;
     font-family: Open Sans,Arial,Helvetica,sans-serif;
 }
-button {
-    background-color: #168de2;
-    border: 0px;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    padding: 0px 15px;
-    height: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 2px;
-    }
 a {
     color: #0066ff;
 }
@@ -26,11 +15,13 @@ a:hover {
   position: relative;
   min-height: 100%;
 }
+
 .header {
     width: 100%;
     height: 50px;
     background: #d8d6d7;
 }
+
 .logo {
     width: 131px;
     height: 50px;
@@ -123,13 +114,7 @@ a:hover {
   left:10px;
 }
 
-/*
-Стиль для сбрасывающего дива.
-*/
-.clear{
-    clear: both;
-}
-/* Админка */ 
+ /* Админка */ 
  .usersul{
     background:#f0f0f0;
     float:left;
@@ -145,56 +130,46 @@ a:hover {
     border: solid 1px #000;
 }
 /* Стили курсов */
-.courses_block {
-    border:1px solid #000;
-    margin-top:10%;
-    float:left; 
-    width:400px; 
-    margin-right:10px; 
-    background-color:#fff;
-    height:335px;
-    margin-bottom:10px;
-    margin-left: 15px;
-}
-.courses_button {
-    float:left; 
-    width:140px; 
-    margin-left:33%;
-}
-.courses_name{
-    font-family: Arial;
-    font-size: 15px;
+        #listcourses { 
+        border:1px solid #000;
+        margin-bottom:10px;
+        margin-top:10%;
+        margin: 20px;
+        width:300px; 
+        height:200px;
+        padding:5px;
+        background:#fff; 
+        float:left;
+        text-align:center;
+        }
+    .courses_button {
+        float:left; 
+        width:140px; 
+        text-align: center;
+        margin-top:3%;
+    }
+    .courses_name{
+        font-family: Arial;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+    }
+    .courses_desc{
+     font-family: Roboto Regular;
+     font-size: 14px;
+     font-weight: bold;
+     color: #000;
+    }
+    button {
+    background-color: #168de2;
+    border: 0px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    padding: 0px 15px;
+    height: 30px;
+    cursor: pointer;
     font-weight: bold;
-    margin-left:31%;
-    color: #000;
-}
-.courses_desc{
- font-family: Roboto Regular;
- font-size: 15px;
- font-weight: bold;
- margin-left:3%;
- color: #000;
-}
-    
-/*
-*Стили для вывода уроков
-*/
-.lessons {
-    overflow: hidden;
-    position: relative;
-}
-.course_reg {
-    overflow: hidden;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.course_reg:hover {
-    background-color: gray;
-    opacity: 0.75;
-    
-}
+    border-radius: 2px;
+    margin-left:26%
+    }
