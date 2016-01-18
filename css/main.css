@@ -146,19 +146,22 @@ a:hover {
         float:left; 
         width:140px; 
         text-align: center;
-        margin-top:3%;
+        margin-top:60px;
     }
     .courses_name{
         font-family: Arial;
         font-size: 12px;
-        text-align: center;
+        text-align: left;
         font-weight: bold;
+        margin-top:-80px;
         color: #000;
     }
     .courses_desc{
      font-family: Roboto Regular;
      font-size: 14px;
      font-weight: bold;
+     text-align: left;
+     width:180px;
      color: #000;
     }
     button {
@@ -171,5 +174,9 @@ a:hover {
     cursor: pointer;
     font-weight: bold;
     border-radius: 2px;
-    margin-left:26%
+    margin-left:140px;
+    }
+    .courses_block_avatar{
+        width:100px;
+        margin-left:170px;
     }

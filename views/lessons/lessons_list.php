@@ -13,9 +13,9 @@
 
 <hr>
 
-<?php foreach ($this->lessons as lesson): ?>
+<?php foreach ($this->lessons as $lesson): ?>
 <div id="listcourses">
-    <img src="{ava}" class="courses_block_avatar">
+    <img src="img/noPicture.png" class="courses_block_avatar">
     <div class="courses_name"><?php echo $lesson->lesson_name; ?></div>
     <div class="courses_desc"><?php echo $lesson->lesson_shortdescription; ?></div>
     <div class="clear"></div>
