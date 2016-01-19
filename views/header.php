@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <title>Курсы от ik-znatok.ru</title>
@@ -13,12 +13,12 @@
         <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <div class="wraper">
+ <div class="wraper">
             <div class="header">
-                <div class="logo"><a href="/learns/">Домой</a></div>
+                <a href="/learns/"><div class="logo"></div></a>
                 <?php if($this->auth): ?>
                     <div class="auth">
-                        Добро пожаловать <?php echo ucfirst($this->user_login); ?><br><a href="/learns/?ctrl=Auth&act=Logout">Выйти</a>
+                       <?php echo ucfirst($this->user_login); ?>&nbsp;&nbsp; |&nbsp;<a href="/learns/?ctrl=Auth&act=Logout">Выйти</a>
                     </div>
                 <?php endif; ?>
             </div>
