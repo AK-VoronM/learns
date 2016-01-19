@@ -73,4 +73,13 @@ class Users extends AbstractModel {
         return $date;
     }
     
+	 public function getUser(){
+        //Личный кабинет юзера
+        $db = new DB;
+        $query = "SELECT user_login, user_group FROM users WHERE user_id='" . $_COOKIE['id'] . "'";
+        $user = $db->query($query);
+        
+        return $user;
+    }
+	
 }

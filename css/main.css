@@ -179,3 +179,34 @@ a:hover {
         width:100px;
         margin-left:170px;
     }
+	
+/* Личный Кабинет */
+h2 {
+    color: #af69a1;
+    font-size: 2.2em;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.online {
+    color: #f6921e;
+    font-size: 90%;
+    padding: 0 5px;
+    letter-spacing: .1em;
+    text-transform: lowercase;
+    vertical-align: top;
+}
+.profile {
+    margin-bottom: 20px;
+}
+.profile dl dt {
+    clear: left;
+    color: #666;
+    float: left;
+    padding: 3px 10px 3px 0;
+    width: 9em;
+}
+.profile dl dd {
+    margin: 0 0 0 10em;
+    padding: 3px 0;
+}
+
