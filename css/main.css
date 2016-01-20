@@ -15,7 +15,6 @@ a:hover {
   position: relative;
   min-height: 100%;
 }
-
 .header {
     width: 100%;
     height: 50px;
@@ -29,7 +28,9 @@ a:hover {
     float: left;
 }
 .auth {
-    width: 400px;
+    width: 200px;
+    float: right;
+    margin-top: 13px;
 }
 .timer {
     text-align: right;
@@ -46,6 +47,10 @@ a:hover {
 /*
 Стили для форм
 */
+input{
+    border-radius: 9px;
+    border: 1px solid #bbb;
+}
 .forminput ul{
 	overflow:hidden;
 	list-style:none;
@@ -57,11 +62,11 @@ a:hover {
 	display:block;
 	float:left;
 	width:170px;
-	height:20px;
+        height:5px;
 }
 .forminput{
 	margin-left:150px;
-	margin-top:10px;
+	margin-top:60px;
 }
 
 /*
@@ -179,8 +184,7 @@ a:hover {
         width:100px;
         margin-left:170px;
     }
-	
-/* Личный Кабинет */
+    /* ЛИЧНЫЙ КАБИНЕТ */
 h2 {
     color: #af69a1;
     font-size: 2.2em;
@@ -209,4 +213,3 @@ h2 {
     margin: 0 0 0 10em;
     padding: 3px 0;
 }
-
