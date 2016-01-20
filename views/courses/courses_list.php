@@ -12,7 +12,7 @@
     <div class="clear"></div>
     <!-- Место для даты -->
     <div class="clear"></div>
-    <button class="courses_button" href="/learns/?ctrl=Lessons&act=ShowLesson&id=<?php echo $course->course_id; ?>">Читать</button>
+        <a href="/learns/?ctrl=Lessons&act=ShowLesson&id=<?php echo $course->course_id; ?>"><button class="courses_button">Читать</button></a>
     <div class="clear"></div> 
 </div>
 <?php endforeach; ?>
