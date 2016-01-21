@@ -133,6 +133,7 @@ input{
     padding:15px;
     border: solid 1px #000;
 }
+
 /* Стили курсов */
         #listcourses { 
         border:1px solid #000;
@@ -151,6 +152,20 @@ input{
         width:140px; 
         text-align: center;
         margin-top:60px;
+    }
+    .admin_button {
+        float:left;
+        width:100px;
+        margin-top:20px;
+        margin-left:0px;
+    }
+    .admin_name{
+        margin-top:0px;
+        color: #000;
+        font-family: Arial;
+        font-size: 24px;
+        text-align: left;
+        font-weight: bold;
     }
     .courses_name{
         font-family: Arial;
