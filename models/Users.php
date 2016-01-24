@@ -82,4 +82,12 @@ class Users extends AbstractModel {
         return $user;
     }
 	
+ public function deleteUser(){
+        //Удаление пользователя
+    $type = intval($_POST['type']);
+    $query = "SELECT user_status FROM users WHERE user_id = '" . $_COOKIE['id'] . "'"; 
+    if($row['user_status'] == 0) {
+    $query = "UPDATE users SET user_status = '{$type}' WHERE user_id='" . $_COOKIE['id'] . "'";
+    }
+    }
 }

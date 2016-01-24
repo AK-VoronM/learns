@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 class UsersController 
 {
     
@@ -59,6 +59,14 @@ class UsersController
         
         //Удаляет пользователя из базы
         
+    }
+public function actionDelUser(){
+    $auth = Auth::checkAuth();
+        $view = new View();
+        $view->auth = $auth;
+        if ($auth) {
+         $view->display('views/users/delete.php');
+        }
     }
     
 }

@@ -9,5 +9,6 @@
 <dt>user_group:</dt>
 <dd><?php echo $user->user_group; ?></dd>
 </dl>
+<div class="delpage">Вы можете <a class="cursor_pointer" onclick="delmypage()">удалить свою страницу</a>.</div>
 <?php endforeach; ?>
 </div>
