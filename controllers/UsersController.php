@@ -1,8 +1,9 @@
-﻿<?php
+<?php
 class UsersController 
 {
     
-	public function actionShowUser(){ 
+    
+        public function actionShowUser(){ 
           
         $auth = Auth::checkAuth();
         
@@ -13,17 +14,20 @@ class UsersController
             $user = Auth::getUser();
 
             $view->user_login = $user->user_login;
-            $view->user_group = $user->user_group;
+            $view->user_group = $user->user_group; 
+            $view->user_status = $user->user_status;
             $view->users = Users::getUser();
+            
             $view->display('header.php');
             $view->display('users/user.php');
             $view->display('footer.php');
-        }else{
-            header("Location: /learns/");
         }
         
+        else{
+            header("Location: /learns/");
+        }
     }   
-	
+    
     public function actionShowUsers(){     
         
         $auth = Auth::checkAuth();
@@ -45,28 +49,19 @@ class UsersController
             header("Location: /learns/");
         }
     }
-        
-    
     
     public function actionAddUser(){ 
-         
-        //Добавляет нового пользователя в базу
         
-    }
-    
+        //Добавляет нового пользователя в базу
        
+    }
+        
+         
+    
     public function actionDeleteUser(){     
         
         //Удаляет пользователя из базы
         
-    }
-public function actionDelUser(){
-    $auth = Auth::checkAuth();
-        $view = new View();
-        $view->auth = $auth;
-        if ($auth) {
-         $view->display('views/users/delete.php');
-        }
     }
     
 }

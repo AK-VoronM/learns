@@ -73,21 +73,13 @@ class Users extends AbstractModel {
         return $date;
     }
     
-	 public function getUser(){
+    public function getUser(){
         //Личный кабинет юзера
         $db = new DB;
-        $query = "SELECT user_login, user_group FROM users WHERE user_id='" . $_COOKIE['id'] . "'";
+        $query = "SELECT user_login, user_group, user_status FROM users WHERE user_id='" . $_COOKIE['id'] . "'";
         $user = $db->query($query);
         
         return $user;
     }
-	
- public function deleteUser(){
-        //Удаление пользователя
-    $type = intval($_POST['type']);
-    $query = "SELECT user_status FROM users WHERE user_id = '" . $_COOKIE['id'] . "'"; 
-    if($row['user_status'] == 0) {
-    $query = "UPDATE users SET user_status = '{$type}' WHERE user_id='" . $_COOKIE['id'] . "'";
-    }
-    }
+    
 }

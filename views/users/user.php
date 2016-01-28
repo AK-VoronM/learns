@@ -4,11 +4,13 @@
 <a href="/learns/"><?php echo $user->user_login; ?></a>
 </h2>
 <dl>
-<dt>user_login:</dt>
+<dt>Логин:</dt>
 <dd><?php echo $user->user_login; ?></dd>
-<dt>user_group:</dt>
+<dt>Группа юзеров:</dt>
 <dd><?php echo $user->user_group; ?></dd>
+<dt>Статус пользователя:</dt>
+<dd><?php echo $user->user_status; ?></dd>
 </dl>
-<div class="delpage">�� ������ <a class="cursor_pointer" onclick="delmypage()">������� ���� ��������</a>.</div>
+    <div class="delpage">Вы можете <a class="cursor_pointer" onclick="delmypage()">удалить свою страницу</a>.</div>
 <?php endforeach; ?>
 </div>
