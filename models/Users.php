@@ -78,7 +78,7 @@ class Users extends AbstractModel {
         $db = new DB;
         $query = "SELECT user_login, user_group, user_status FROM users WHERE user_id='" . $_COOKIE['id'] . "'";
         $user = $db->query($query);
-        $action = [add, delete, banned];
+        
         return $user;
     }
     

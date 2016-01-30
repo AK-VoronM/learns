@@ -11,12 +11,14 @@ class UsersController
         $view->auth = $auth;
         
         if ($auth) {
+            
+            $action = ['add', 'delete', 'banned'];
+            
             $user = Auth::getUser();
-
+            
+            $view->user_status = $action[$user->user_status];
             $view->user_login = $user->user_login;
             $view->user_group = $user->user_group; 
-            $view->user = $user->user_status;
-            $view->users = Users::getUser();
             
             $view->display('header.php');
             $view->display('users/user.php');

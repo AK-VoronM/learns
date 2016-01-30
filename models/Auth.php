@@ -56,7 +56,7 @@ class Auth extends AbstractModel {
     public function getUser(){
         //Исходим из того, что есть кука
         $db = new DB;
-        $query = "SELECT user_login, user_group FROM users WHERE user_id='" . $_COOKIE['id'] . "'";
+        $query = "SELECT user_login, user_group, user_status FROM users WHERE user_id='" . $_COOKIE['id'] . "'";
         $user = $db->query($query);
         
         return $user[0];
