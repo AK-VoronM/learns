@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 class UsersController 
 {
     
@@ -15,7 +15,7 @@ class UsersController
 
             $view->user_login = $user->user_login;
             $view->user_group = $user->user_group; 
-            $view->user_status = $user->user_status;
+            $view->user = $user->user_status;
             $view->users = Users::getUser();
             
             $view->display('header.php');
